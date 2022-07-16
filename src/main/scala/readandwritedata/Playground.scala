@@ -36,7 +36,7 @@ object Playground extends App{
 //    .format("json")
 //    .schema(restaurantSchema) // либо .option("inferSchema", "true")
 //    .option("mode", "failFast") // варианты: failFast, dropMalformed, permissive (default)
-//    .option("path", "src/main/resources/data/restaurant.json")
+//    .option("path", "src/main/resources/restaurant.json")
 //    .load()
 //
 //  val restaurants = spark.read
@@ -44,7 +44,7 @@ object Playground extends App{
 //    .options(Map(
 //      "inferSchema" -> "true",
 //      "mode" -> "failFast",
-//      "path" -> "src/main/resources/data/restaurant.json"
+//      "path" -> "src/main/resources/restaurant.json"
 //    ))
 //    .load()
 //
@@ -57,7 +57,7 @@ object Playground extends App{
     .option("header", "true")
     .option("sep", ",")
     .option("nullValue", "n/a")
-    .csv("src/main/resources/data/topspotify.csv")
+    .csv("src/main/resources/topspotify.csv")
 
   topspotify.show(5, 40, true)
   topspotify.printSchema()
