@@ -2,9 +2,9 @@ name := "spark-course"
 
 version := "0.1"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.13.8"
 
-lazy val sparkVersion = "2.4.7"
+lazy val sparkVersion = "3.2.1"
 
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % sparkVersion,
